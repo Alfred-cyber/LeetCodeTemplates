@@ -31,7 +31,7 @@ import heapq
 
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# 🪟  PATTERN 1: SLIDING WINDOW
+#   PATTERN 1: SLIDING WINDOW
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 #
 #   MENTAL MODEL: Imagine a window sliding over an array.
@@ -454,9 +454,9 @@ def tree_dfs_inorder(root: Optional[TreeNode]) -> List[int]:
         if node is None:
             return
 
-        visit_subtree(node.left)          # 🌿 Go left first
+        visit_subtree(node.left)          #  Go left first
         visited_values.append(node.value)  #   Process this node
-        visit_subtree(node.right)         # 🌿 Go right last
+        visit_subtree(node.right)         #  Go right last
 
     visit_subtree(root)
     return visited_values
@@ -667,7 +667,7 @@ def dp_knapsack_zero_one(item_weights: List[int], item_values: List[int], bag_ca
 
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# 🔗  PATTERN 7: LINKED LIST TRICKS
+#   PATTERN 7: LINKED LIST TRICKS
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 class ListNode:
