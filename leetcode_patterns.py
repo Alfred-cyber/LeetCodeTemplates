@@ -165,10 +165,10 @@ def two_pointers_find_pair_with_target_sum(sorted_numbers: List[int], target: in
             return [left_pointer + 1, right_pointer + 1]  # 1-indexed answer
 
         elif current_sum < target:
-            left_pointer += 1   # 📈 Sum is too small — move left pointer right to increase
+            left_pointer += 1   #  Sum is too small — move left pointer right to increase
 
         else:
-            right_pointer -= 1  # 📉 Sum is too large — move right pointer left to decrease
+            right_pointer -= 1  #  Sum is too large — move right pointer left to decrease
 
     return []  # No pair found
 
@@ -391,7 +391,7 @@ def hashmap_group_anagrams(list_of_words: List[str]) -> List[List[str]]:
     anagram_groups: Dict[str, List[str]] = defaultdict(list)
 
     for word in list_of_words:
-        sorted_letters = tuple(sorted(word))   # 🔑 The "fingerprint" of an anagram group
+        sorted_letters = tuple(sorted(word))   #  The "fingerprint" of an anagram group
         anagram_groups[sorted_letters].append(word)
 
     return list(anagram_groups.values())
@@ -430,7 +430,7 @@ def hashmap_subarray_sum_equals_k(numbers: List[int], target_k: int) -> int:
 
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# 🌳  PATTERN 5: BINARY TREE TRAVERSALS
+#   PATTERN 5: BINARY TREE TRAVERSALS
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 class TreeNode:
